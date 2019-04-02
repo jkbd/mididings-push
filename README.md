@@ -28,12 +28,14 @@ configuration file.
 
 ### Adopt the generation template to your needs
 
-Change the `generate.py` file. Take care of indention.
+Change the `generate.py` file:
 
 * Adapt the `print_config()` function to use your ports. Compare the
   port names of e.g. `aseqdump -l`.
 
 * Change the scene patches in the `defined_scenes` list to your needs.
+
+Take care of indention.
 
 ### Generate configuration
 
