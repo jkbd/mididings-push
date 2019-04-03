@@ -41,11 +41,20 @@ color_lila = 0x45
 defined_scenes = [
     # First row
     {
+        'name': "Panic",
+        'note': "Send all-notes-off and sustain-off to all ports",
+        'color': (color_red, color_soft_red),
+        'patch': """
+              [
+                  Panic(bypass=False) >> [ Output('synth1', channel=1), Output('synth2', channel=1) ],
+              ],
+"""
+    },
+    {
         'name': "No patch",
         'note': "No routing and no presets configured.",
         'patch': """
               [
-                  # Patch
                   Discard(),
               ],
 """
